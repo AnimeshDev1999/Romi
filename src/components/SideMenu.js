@@ -3,7 +3,7 @@ import close from "../images/close-outline.svg";
 
 const SideMenu = (props) => {
   return (
-    <div className={props.stat ? "side-menu" : "side-menu side-menu-opn"}>
+    <div className={props.stat ? "side-menu side-menu-opn" : "side-menu"}>
       <div className="flex justify-between items-center">
         <img src={logo} alt="" className="h-16" />
         <button onClick={props.toggle} className="mr-4">
