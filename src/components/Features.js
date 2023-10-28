@@ -23,7 +23,7 @@ const Features = () => {
   ];
 
   return (
-    <div className="px-6 py-24 flex flex-col items-center gap-14">
+    <div className="px-6 md:px-12 lg:max-w-[1300px] lg:mx-auto py-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-14">
       {card.map((item) => (
         <Fcard key={item.hed} data={item}></Fcard>
       ))}

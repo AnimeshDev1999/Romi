@@ -16,13 +16,13 @@
   }
 
   .nav {
-    @apply px-3 py-1 flex justify-between items-center;
+    @apply px-3 lg:px-8 py-1 flex justify-between items-center;
     box-shadow: 0 0.7rem 0.8rem rgba(0, 0, 0, 0.2);
   }
 
   .nav-btn {
     @apply rounded-md text-sm p-2 flex justify-center items-center gap-2;
-    border: 1px solid hsla(0, 0%, 100%, 0.0784313725490196);
+    border: 1px solid #dddddd53;
     border-radius: 4px;
   }
 
@@ -87,5 +87,13 @@
 
   .side-btn {
     @apply py-3 text-[#b9b9b9] hover:text-white hover:bg-[rgba(149,152,174,.1411764706)] text-left px-5;
+  }
+
+  .inactive-nav-btn {
+    @apply text-[#b9b9b9] hover:text-white;
+  }
+
+  .active-nav-btn {
+    color: white !important;
   }
 }

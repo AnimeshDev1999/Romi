@@ -7,11 +7,11 @@ const CtaCard = (props) => {
       </div>
       <p className="text-lg">{props.data.txt}</p>
       <p className="text-[#b9b9b9]">{props.data.stat}</p>
-      <div className="w-full">
-        <button className="rounded-md w-full py-2 px-4 bg-[#3eb489] mb-4">
+      <div className="w-full md:flex md:items-center md:gap-4">
+        <button className="rounded-md w-full md:w-max py-2 px-4 bg-[#3eb489] mb-4 md:mb-0">
           Buy
         </button>
-        <button className="cta-btn">Read more</button>
+        <button className="cta-btn md:w-max">Read more</button>
       </div>
     </div>
   );

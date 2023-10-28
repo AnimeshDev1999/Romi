@@ -7,13 +7,42 @@ import dots from "../images/3dots.svg";
 const NavBar = (props) => {
   return (
     <div className="nav">
-      <div className="flex">
-        <button onClick={props.toggle}>
+      <div className="flex justify-center items-center">
+        <button onClick={props.toggle} className="block md:hidden">
           <img src={menu} alt="menu" className="h-8" />
         </button>
         <img src={logo} alt="company logo" className="h-14" />
+        <p className="text-2xl">Romi Finance</p>
       </div>
-      <div className="flex justify-center items-center gap-1">
+      <div className="hidden md:flex justify-center items-center gap-8">
+        <button
+          onClick={props.func}
+          className={
+            props.current === "Home" ? "active-nav-btn" : "inactive-nav-btn"
+          }
+        >
+          Home
+        </button>
+        <button
+          onClick={props.func}
+          className={
+            props.current === "Dashboard"
+              ? "active-nav-btn"
+              : "inactive-nav-btn"
+          }
+        >
+          Dashboard
+        </button>
+        <button
+          onClick={props.func}
+          className={
+            props.current === "Earn" ? "active-nav-btn" : "inactive-nav-btn"
+          }
+        >
+          Earn
+        </button>
+      </div>
+      <div className="flex justify-center items-center gap-1 md:gap-6">
         <button className="rounded-md text-sm p-2 bg-[#3eb489]">Trade</button>
         <button className="nav-btn">
           <img src={wallet} alt="" className="h-5" />

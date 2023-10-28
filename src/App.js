@@ -16,13 +16,20 @@ function App() {
     setPage(e.target.innerText);
     setVisible(!visible);
   };
+  const pageSwitchDesk = (e) => {
+    setPage(e.target.innerText);
+  };
   const mobNavToggle = (e) => {
     setVisible(!visible);
   };
 
   return (
     <div className="relative">
-      <NavBar toggle={mobNavToggle}></NavBar>
+      <NavBar
+        current={page}
+        func={pageSwitchDesk}
+        toggle={mobNavToggle}
+      ></NavBar>
       {page === "Home" ? (
         <>
           <Home></Home>
