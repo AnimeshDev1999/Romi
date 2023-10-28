@@ -6,8 +6,8 @@ const Earn = () => {
       tittle: "$ROMI",
       list1: [
         ["Price", "$0.00"],
-        ["Wallet", "... $ZOMI ($...)"],
-        ["Staked", "... $ZOMI ($...)"],
+        ["Wallet", "... $ROMI ($...)"],
+        ["Staked", "... $ROMI ($...)"],
       ],
       list2: [
         ["APR", "...%"],
@@ -16,8 +16,8 @@ const Earn = () => {
         ["Boost Percentage", "...%"],
       ],
       list3: [
-        ["Total Staked", "0 $ZOMI ($...)"],
-        ["Total Supply", "10,000 $ZOMI ($10)"],
+        ["Total Staked", "0 $ROMI ($...)"],
+        ["Total Supply", "10,000 $ROMI ($10)"],
       ],
       btn: "Buy $ROMI",
     },
@@ -39,7 +39,7 @@ const Earn = () => {
       btn: "Buy $ZLP",
     },
     {
-      tittle: "Escrowed $ZOMI",
+      tittle: "Escrowed $ROMI",
       list1: [
         ["Price", "$0.00"],
         ["Wallet", "... $ZLP ($...)"],
@@ -60,7 +60,7 @@ const Earn = () => {
       list1: [
         ["ETH (WETH)", "... ($...)"],
         ["$ROMI", "... ($...)"],
-        ["Escrowed $ZOMI", "... ($...)"],
+        ["Escrowed $ROMI", "... ($...)"],
         ["Multiplier Points", "..."],
         ["Staked Multiplier Points", "..."],
         ["Total", "$..."],
@@ -113,7 +113,7 @@ const Earn = () => {
         <h1 className="text-4xl leading-tight">Vest</h1>
       </div>
       <p className="text-[#b9b9b9] mb-6">
-        Convert esZOMI tokens to $ZOMI tokens. Please read the vesting details
+        Convert esROMI tokens to $ROMI tokens. Please read the vesting details
         before using the vaults.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
