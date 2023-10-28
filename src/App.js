@@ -7,6 +7,7 @@ import Cta from "./components/Cta";
 import Footer from "./components/Footer";
 import Stats from "./components/Stats";
 import SideMenu from "./components/SideMenu";
+import Earn from "./components/Earn";
 
 function App() {
   const [page, setPage] = useState("Home");
@@ -31,7 +32,7 @@ function App() {
       ) : page === "Dashboard" ? (
         <Stats></Stats>
       ) : (
-        ""
+        <Earn></Earn>
       )}
       <Footer></Footer>
       <SideMenu

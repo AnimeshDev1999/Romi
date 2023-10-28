@@ -17,6 +17,9 @@ const SideMenu = (props) => {
         <button onClick={props.func} className="side-btn">
           Dashboard
         </button>
+        <button onClick={props.func} className="side-btn">
+          Earn
+        </button>
       </div>
     </div>
   );
