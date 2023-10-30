@@ -47,7 +47,13 @@
   }
 
   .stat-card {
-    @apply flex flex-col justify-center rounded-md bg-[#151515];
+    @apply flex flex-col justify-center md:justify-between rounded-md bg-[#151515];
+    border: 1px solid #dddddd53;
+    border-radius: 4px;
+  }
+
+  .stat-card2 {
+    @apply flex flex-col justify-center lg:hidden md:justify-between rounded-md bg-[#151515];
     border: 1px solid #dddddd53;
     border-radius: 4px;
   }
@@ -57,6 +63,14 @@
     margin: 10px auto;
     max-width: 80%;
     max-height: 190px;
+  }
+
+  .tbl-hed {
+    @apply text-sm font-light text-[#b9b9b9] pb-5;
+  }
+
+  .tbl-dat {
+    @apply text-sm font-light pb-5;
   }
 
   .circle {

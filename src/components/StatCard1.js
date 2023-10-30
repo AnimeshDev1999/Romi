@@ -2,7 +2,7 @@ import whtDia from "../images/whtdia.svg";
 
 const StatCard1 = (props) => {
   return (
-    <div className="stat-card">
+    <div className={props.data.med}>
       <div className="px-4 py-5 items-center flex gap-2 border-b-[1px] border-[#dddddd53]">
         {props.data.hasIco ? <img src={whtDia} alt="" /> : ""}
         <p className="">{props.data.tittle}</p>

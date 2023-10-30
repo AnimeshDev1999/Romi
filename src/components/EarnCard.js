@@ -7,7 +7,7 @@ const EarnCard = (props) => {
         {props.data.hasIco ? <img src={whtDia} alt="" /> : ""}
         <p className="">{props.data.tittle}</p>
       </div>
-      <div className="p-4 flex flex-col gap-2">
+      <div className="p-4 flex flex-col  gap-2">
         {props.data.list1.map((item) => (
           <div key={item[0]} className="flex justify-between">
             <p className="text-[#b9b9b9]">{item[0]}</p>

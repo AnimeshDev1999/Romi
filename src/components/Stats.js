@@ -3,11 +3,13 @@ import StatCard2 from "./StatCard2";
 import bludia from "../images/bludimon.svg";
 import token1 from "../images/token1.png";
 import token2 from "../images/token2.png";
+import StatTable from "./StatTable";
 
 const Stats = () => {
   const statistics = [
     {
       tittle: "Overview",
+      med: "stat-card",
       list: [
         { nam: "AUM", price: "$34" },
         { nam: "$ZLP Pool", price: "$34" },
@@ -18,6 +20,7 @@ const Stats = () => {
     },
     {
       tittle: "Total Stats",
+      med: "stat-card",
       list: [
         { nam: "Total Fees", price: "$0" },
         { nam: "Total Volume", price: "$0" },
@@ -54,6 +57,7 @@ const Stats = () => {
   const statistics2 = [
     {
       tittle: "ETH",
+      med: "stat-card2",
       hasIco: true,
       list: [
         { nam: "Price", price: "$1,781.45" },
@@ -64,6 +68,7 @@ const Stats = () => {
     },
     {
       tittle: "WBTC",
+      med: "stat-card2",
       hasIco: true,
       list: [
         { nam: "Price", price: "$1,781.45" },
@@ -74,6 +79,7 @@ const Stats = () => {
     },
     {
       tittle: "APE",
+      med: "stat-card2",
       hasIco: true,
       list: [
         { nam: "Price", price: "$1,781.45" },
@@ -84,6 +90,7 @@ const Stats = () => {
     },
     {
       tittle: "USDC",
+      med: "stat-card2",
       hasIco: true,
       list: [
         { nam: "Price", price: "$1,781.45" },
@@ -120,6 +127,7 @@ const Stats = () => {
         {statistics2.map((item) => (
           <StatCard1 key={item.tittle} data={item}></StatCard1>
         ))}
+        <StatTable data={statistics2}></StatTable>
       </div>
     </div>
   );
